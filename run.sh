@@ -1,7 +1,8 @@
 #!/bin/bash
 
 echo "Compiling NASM"
-nasm -f bin boot_sect_stack.asm -o boot_sect_stack.bin 
+nasm -f bin boot_sect_print.asm -o boot_sect_print.bin 
+nasm -f bin boot_sect_main.asm -o boot_sect_main.bin 
 
 echo "Running file on emulator"
-qemu-system-x86_64 boot_sect_stack.bin
+qemu-system-x86_64 boot_sect_main.bin
