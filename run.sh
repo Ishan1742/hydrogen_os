@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Compiling NASM"
-nasm -f bin boot_sect_main.asm -o boot_sect_main.bin
+nasm -f bin 32bit_print.asm -o 32bit_print.bin
 
 echo "Running file on emulator"
-qemu-system-x86_64 boot_sect_main.bin
+qemu-system-x86_64 32bit_print.bin
