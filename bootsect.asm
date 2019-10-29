@@ -1,5 +1,5 @@
 [org 0x7c00]
-KERNEL_OFFSET equ 0x100 ; The same one we used when linking the KERNEL_OFFSET
+KERNEL_OFFSET equ 0x1000 ; The same one we used when linking the KERNEL_OFFSET
 
     mov [BOOT_DRIVE], dl
     mov bp, 0x9000
