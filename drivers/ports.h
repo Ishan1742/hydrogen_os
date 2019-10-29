@@ -1,6 +1,6 @@
 #ifndef PORTS_H
-
 #define PORTS_H
+
 #include "../cpu/types.h"
 
 unsigned char port_byte_in (u16 port);
